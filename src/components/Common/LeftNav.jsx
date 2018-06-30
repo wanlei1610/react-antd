@@ -10,30 +10,15 @@ class LeftNav extends React.Component {
       active : false,
       isToggleOn: true
     }
-
   };
-  componentDidMount() {
-    const numbers = [1,2,3,4,5];
-    const doubled = numbers.map((numbers) => numbers*2);
-    console.log(doubled);
 
-  };
-  clickAddActive() {
-
-  };
   handleClick(num) {
     this.setState(prevState => ({
         isToggleOn : !prevState.isToggleOn
     }));
-      console.log(num);
   }
   render () {
-      const numbers = [1,2,3,4,5];
-      const listItems = numbers.map((number,index) =>
-        <span key={index}>{number}</span>
-      )
     return (
-
       <div className={styles["This"]}>
         <div className={styles["menuList"]}>
           <a className={styles["current"]} href="/wsc">
@@ -76,7 +61,6 @@ class LeftNav extends React.Component {
             </div>
           </a>
         </div>
-        <div>{listItems}</div>
         <div className={styles["logo"]} onClick={this.handleClick.bind(this,333)}>
           {this.state.isToggleOn?'ON':"OFF"}
           这里是logo图片地方
