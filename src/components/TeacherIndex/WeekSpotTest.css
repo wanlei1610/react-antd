@@ -1,0 +1,33 @@
+.This{
+    /*display:flex;*/
+    /*flex-direction:column;*/
+    width:100%;
+}
+h1{
+    width:300px;
+}
+.selectBox{
+    /*display:flex;*/
+    /*height:40px;*/
+    /*width:400px;*/
+}
+.select{
+    /*display:flex;*/
+    display:inline-block;
+    /*width:150px;*/
+}
+.option{
+    /*display:flex;*/
+    width:120px !important;
+    background:yellowgreen !important;
+}
+.input{
+    display: inline-block;
+    width:180px !important;
+    margin-left:0px !important;
+}
+
+
+
+
+
